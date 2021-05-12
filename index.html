@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>M3: EmojiCam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="js/keyboard/keyboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+
+<body>
+    <h1>M3:EmojiCam - Implementation</h1>
+    <textarea class="use-keyboard-input" style="position: absolute; top: 130px; left: 20px; width: 500px; height: 200px;"></textarea>
+    <div id="canvas_box" class="canvas-box" style="position: fixed; bottom: -5px; left: -5px;"></div>
+    <button id="clear-button" class="btn btn-dark" style="position: fixed; bottom: 0px; left: 0px; border: none; height:25px; background:#15657e; color: #ffffff; outline: none;">Clear </button>
+    <button id="predict-button" class="btn btn-dark" style="position: fixed; bottom: 0px; left: 201px; border: none; height:25px; background:#15657e; color: #ffffff; outline: none;">Predict</button>
+    <button type="button" onclick="init()">Start</button>
+    <div id="webcam-container" style="position: fixed; bottom: -5px; left: 260px;"></div>
+    <!--<div id="label-container"></div>-->
+    <script src="js/emoji/recognizer.js"></script> 
+    <script src="js/keyboard/keyboard.js"></script>
+    <script src="js/camera/campred.js"></script>
+    
+</body>
